@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Happy 18th Birthday 💙</title>
+  <meta name="description" content="A special 18th birthday celebration." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@500;700&family=Cinzel+Decorative:wght@400;700&family=Satisfy&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="particles-container"></div>
+  <div id="balloons-container"></div>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">💙 For You</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#countdown">Countdown</a></li>
+        <li><a href="#treasures">Treasures</a></li>
+        <li><a href="#gifts">Gifts</a></li>
+        <li><a href="#celebration">Celebrate 🎉</a></li>
+        <li><a href="#flashcards">Cards</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section id="hero">
+    <div class="stars-bg"></div>
+    <div class="hero-aurora"></div>
+    <div class="hero-content">
+      <div class="hero-badge fade-up">✨ Today the world is a little more magical ✨</div>
+      <h1 class="hero-title fade-up" style="align-items: center;">
+        <span class="word-wrap"><span class="w w1">She</span></span>
+
+        <span class="word-wrap"
+          style="display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; top: 0.1em;">
+          <span class="w w2" style="line-height: 1;">Turns</span>
+          <span class="w w2"
+            style="font-family: 'Dancing Script', cursive; font-size: 0.45em; line-height: 1; letter-spacing: 0.05em; background: none; -webkit-text-fill-color: var(--gold2); margin-top: -0.15em;">Into</span>
+        </span>
+
+        <span class="word-wrap"
+          style="display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative;">
+          <span class="w w3" style="line-height: 1; position: relative; padding-right: 0.4em;">
+            18<span
+              style="position: absolute; top: 0.1em; right: 0; font-size: 0.4em; font-family: 'Dancing Script', cursive; -webkit-text-fill-color: var(--gold2);">th</span>
+          </span>
+          <span class="w w3"
+            style="font-family: 'Inter', sans-serif; font-size: 0.18em; line-height: 1; letter-spacing: 0.3em; text-transform: uppercase; background: none; -webkit-text-fill-color: var(--gold); text-shadow: none; margin-top: 0em; font-weight: 600;">Chapter
+            Of Life</span>
+        </span>
+      </h1>
+      <div class="hero-subtitle fade-up">
+        <span class="hs hs1">Magical</span>
+        <span class="hs-dot">·</span>
+        <span class="hs hs2">Memorizing</span>
+        <span class="hs-dot">·</span>
+        <span class="hs hs3">Majestic</span>
+      </div>
+      <p class="hero-poem fade-up">17 years of magic. Let the real adventure begin.</p>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-mouse"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section id="countdown">
+    <div class="section-inner" style="text-align:center;">
+      <p class="section-label">The Big Day</p>
+      <h2 class="section-title">May 16, 2026</h2>
+      <div class="countdown-grid" id="countdown-timer">
+        <div class="cd-block"><span class="cd-num" id="days">00</span><span class="cd-label">Days</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-block"><span class="cd-num" id="hours">00</span><span class="cd-label">Hours</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-block"><span class="cd-num" id="minutes">00</span><span class="cd-label">Minutes</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-block"><span class="cd-num" id="seconds">00</span><span class="cd-label">Seconds</span></div>
+      </div>
+      <div id="birthday-burst" class="hidden" style="margin-top:48px;">
+        <h2 class="burst-title">🎉 IT'S YOUR 18TH! 🎉</h2>
+        <button id="launch-confetti-btn" class="btn-gold" style="margin-top:20px;">Launch Celebration 🎊</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- HER TREASURES -->
+  <section id="treasures">
+    <div class="section-inner">
+      <p class="section-label">Her Gifts to Me</p>
+      <h2 class="section-title">Treasures 🪷</h2>
+      <div class="treasures-grid">
+
+        <!-- LOTUS PETAL -->
+        <div class="treasure-card reveal" id="lotus-card">
+          <div class="tc-icon-zone">
+            <div class="petal-3d-wrap">
+              <svg class="svg-petal-long" viewBox="0 0 60 140" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="pg1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#fff0f5" />
+                    <stop offset="40%" stop-color="#ffb6c1" />
+                    <stop offset="100%" stop-color="#e75480" />
+                  </linearGradient>
+                  <filter id="petal-glow">
+                    <feGaussianBlur stdDeviation="3" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                </defs>
+                <!-- Main petal body (long, slender) -->
+                <path d="M 30 5 C 48 30 52 80 30 135 C 8 80 12 30 30 5 Z" fill="url(#pg1)" filter="url(#petal-glow)"
+                  opacity="0.95" />
+                <!-- Central vein -->
+                <line x1="30" y1="12" x2="30" y2="130" stroke="rgba(255,255,255,0.5)" stroke-width="1"
+                  stroke-linecap="round" />
+                <!-- Side veins -->
+                <line x1="30" y1="35" x2="22" y2="55" stroke="rgba(255,255,255,0.3)" stroke-width="0.6" />
+                <line x1="30" y1="35" x2="38" y2="55" stroke="rgba(255,255,255,0.3)" stroke-width="0.6" />
+                <line x1="30" y1="65" x2="19" y2="85" stroke="rgba(255,255,255,0.25)" stroke-width="0.6" />
+                <line x1="30" y1="65" x2="41" y2="85" stroke="rgba(255,255,255,0.25)" stroke-width="0.6" />
+                <!-- Tip highlight -->
+                <ellipse cx="30" cy="12" rx="5" ry="8" fill="rgba(255,255,255,0.4)" />
+              </svg>
+              <div class="petal-glow-ring"></div>
+            </div>
+          </div>
+          <div class="treasure-info">
+            <h3>A Single Lotus Petal</h3>
+            <p>"One petal. A thousand feelings she couldn't say out loud."</p>
+          </div>
+        </div>
+
+        <!-- VILLAGE STONES -->
+        <div class="treasure-card reveal" id="stone-card">
+          <div class="tc-icon-zone" style="height: 300px; padding: 0;">
+            <div class="magic-stone-wrapper" id="parallax-scene">
+              <img src="images/stone_1.webp" class="floating-stone stone-pos-1" data-speed="-2" alt="Stone 1">
+              <img src="images/stone_2.webp" class="floating-stone stone-pos-2" data-speed="4" alt="Stone 2">
+              <img src="images/stone_3.webp" class="floating-stone stone-pos-3" data-speed="2" alt="Stone 3">
+              <img src="images/stone_4.webp" class="floating-stone stone-pos-4" data-speed="-4" alt="Stone 4">
+              <img src="images/stone_5.webp" class="floating-stone stone-pos-5" data-speed="3" alt="Shell">
+            </div>
+          </div>
+          <div class="treasure-info">
+            <h3>Stones from Her Village</h3>
+            <p>"These aren't just stones. They're the ground she walked on"</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GIFTS I GAVE HER -->
+  <section id="gifts">
+    <div class="section-inner">
+      <p class="section-label">My Gifts to Her</p>
+      <h2 class="section-title">Given with Love 🎁</h2>
+      <div class="gifts-grid">
+        <div class="gift-card reveal" id="gift-earrings" style="padding: 0; display: flex; flex-direction: column;">
+          <div class="magic-gift-wrapper">
+            <img src="images/earing_1_hq.webp" class="floating-gift earing-pos-1" data-speed="2" alt="Earring 1">
+            <img src="images/earing_2_hq.webp" class="floating-gift earing-pos-2" data-speed="-2" alt="Earring 2">
+          </div>
+          <div style="padding: 20px 32px 30px; position: relative;">
+            <div class="gift-ribbon-corner" style="top: -220px;"></div>
+            <h3>Earrings</h3>
+            <p>"For the girl who deserves to sparkle"</p>
+          </div>
+          <div class="gift-shimmer"></div>
+        </div>
+        <div class="gift-card reveal" id="gift-choco" style="padding: 0; display: flex; flex-direction: column;">
+          <div class="magic-gift-wrapper">
+            <img src="images/choco_1.webp" class="floating-gift choco-pos-main" data-speed="2" alt="KitKat & Cadbury">
+          </div>
+          <div style="padding: 20px 32px 30px; position: relative;">
+            <div class="gift-ribbon-corner" style="top: -220px;"></div>
+            <h3>KitKat</h3>
+            <p>"Sweet, just like you"</p>
+          </div>
+          <div class="gift-shimmer"></div>
+        </div>
+
+        <div class="gift-card reveal" id="gift-pens" style="padding: 0; display: flex; flex-direction: column;">
+          <div class="magic-gift-wrapper">
+            <img src="images/pen_1_hq.webp" class="floating-gift pen-pos-main" data-speed="3" alt="Pens">
+          </div>
+          <div style="padding: 20px 32px 30px; position: relative;">
+            <div class="gift-ribbon-corner" style="top: -220px;"></div>
+            <h3>Pens</h3>
+            <p>"For the chapters ahead"</p>
+          </div>
+          <div class="gift-shimmer"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CELEBRATION SECTION ===================== -->
+  <section id="celebration">
+    <div class="section-inner" style="text-align:center;">
+      <p class="section-label">17 Years of You</p>
+      <h2 class="section-title">The Grand Celebration 🎈</h2>
+
+      <!-- CELEBRATE BUTTON -->
+      <div id="celebrate-entry">
+        <p class="section-sub" style="margin-inline:auto; margin-bottom:40px;">Celebrating Years by poping Balloons.
+          Pop each one!</p>
+        <button class="btn-celebrate" id="start-celebrate-btn" onclick="startCelebration()">
+          <span class="btn-celebrate-inner">🎉 Let's Celebrate! 🎉</span>
+        </button>
+      </div>
+
+      <!-- BALLOON GAME ARENA -->
+      <div id="balloon-arena" class="hidden">
+        <div class="balloon-sky" id="balloon-sky">
+          <!-- Balloons rendered by JS -->
+        </div>
+
+        <div class="year-display">
+          <span class="year-popped-count" id="year-count">0</span>
+          <span class="year-label-text">/ Years Celebrated</span>
+        </div>
+
+        <div class="tap-instruction" id="tap-instruction">
+          <div class="tap-pulse">👆</div>
+          <p>Tap a balloon to pop it!</p>
+        </div>
+      </div>
+
+      <!-- CAKE STAGE (shown after all 18 popped) -->
+      <div id="cake-stage" class="hidden">
+        <div class="cake-stage-header">
+          <h2 class="cake-stage-title">🎂 Make a Wish! 🎂</h2>
+          <p class="cake-stage-sub">Drag the knife and cut the cake!</p>
+        </div>
+        <div class="cake-scene-3d" id="cake-scene-3d">
+          <div class="cake-whole" id="cake-whole">
+            <!-- Candles -->
+            <div class="cake-candles-row" id="cake-candles-row">
+              <div class="cnd">
+                <div class="cnd-body"></div>
+                <div class="cnd-flame"></div>
+              </div>
+              <div class="cnd">
+                <div class="cnd-body"></div>
+                <div class="cnd-flame"></div>
+              </div>
+              <div class="cnd">
+                <div class="cnd-body"></div>
+                <div class="cnd-flame"></div>
+              </div>
+            </div>
+            <!-- Cake layers -->
+            <div class="cake-layer layer-top">
+              <div class="layer-face top-face"></div>
+              <div class="layer-face front-face layer-top-front"></div>
+              <div class="layer-decoration">🌸 🌸</div>
+            </div>
+            <div class="cake-layer layer-mid">
+              <div class="layer-face top-face mid-top"></div>
+              <div class="layer-face front-face layer-mid-front"></div>
+              <div class="layer-decoration">✨ Happy Birthday ✨</div>
+            </div>
+            <div class="cake-layer layer-bot">
+              <div class="layer-face top-face bot-top"></div>
+              <div class="layer-face front-face layer-bot-front"></div>
+              <div class="layer-decoration">💙 May 16, 2026 💙</div>
+            </div>
+            <!-- Plate -->
+            <div class="cake-plate"></div>
+          </div>
+
+          <!-- Knife -->
+          <div class="knife-container" id="knife-container">
+            <div class="knife-wrap" id="knife-wrap">
+              <svg class="knife-svg" viewBox="0 0 40 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="kg1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#c0c0c0" />
+                    <stop offset="50%" stop-color="#f8f8f8" />
+                    <stop offset="100%" stop-color="#a0a0a0" />
+                  </linearGradient>
+                  <linearGradient id="kg2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#8B4513" />
+                    <stop offset="100%" stop-color="#D2691E" />
+                  </linearGradient>
+                </defs>
+                <!-- Blade -->
+                <path d="M 18 10 L 22 10 L 28 140 L 12 140 Z" fill="url(#kg1)" />
+                <line x1="20" y1="10" x2="20" y2="140" stroke="rgba(255,255,255,0.6)" stroke-width="1" />
+                <!-- Guard -->
+                <rect x="8" y="138" width="24" height="8" rx="3" fill="#888" />
+                <!-- Handle -->
+                <rect x="12" y="146" width="16" height="54" rx="6" fill="url(#kg2)" />
+                <circle cx="14" cy="160" r="2" fill="rgba(255,255,255,0.3)" />
+                <circle cx="20" cy="165" r="1.5" fill="rgba(255,255,255,0.2)" />
+                <circle cx="14" cy="175" r="2" fill="rgba(255,255,255,0.3)" />
+              </svg>
+            </div>
+          </div>
+
+          <div id="cut-flash" class="cut-flash hidden"></div>
+        </div>
+        <p class="cake-drag-hint" id="cake-drag-hint">← Drag the knife across to slice! →</p>
+        <div id="cut-celebration" class="cut-celebration hidden" style="text-align: center; margin-top: -20px;">
+          <p class="cut-msg">🎊 Happy 18th Birthday! 🎊</p>
+          <p class="cut-sub">May every wish bloom like a lotus 🪷</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FLASHCARDS -->
+  <section id="flashcards">
+    <div class="section-inner" style="text-align:center;">
+      <p class="section-label">Little Truths</p>
+      <h2 class="section-title">Things About You 💌</h2>
+      <p class="section-sub" style="margin-inline:auto; margin-bottom:50px;">Tap each card to reveal her. 🌸</p>
+
+      <!-- 3 PHOTO FLIP CARDS -->
+      <div class="flashcards-grid photo-grid">
+
+        <div class="flashcard photo-flashcard reveal" onclick="this.classList.toggle('flipped')">
+          <div class="fc-inner">
+            <div class="fc-front">
+              <div class="fc-front-glow"></div>
+              <div class="fc-icon">🧸</div>
+              <div class="fc-front-label">Childhood</div>
+              <div class="fc-tap-hint">Tap to reveal</div>
+            </div>
+            <div class="fc-back fc-photo-back">
+              <div class="fc-photo-frame" style="border: none; cursor: default;">
+                <img src="images/child.png" class="fc-photo-img" alt="Childhood photo" />
+              </div>
+              <p class="fc-photo-caption">Little Minal 🌸</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flashcard photo-flashcard reveal" onclick="this.classList.toggle('flipped')">
+          <div class="fc-inner">
+            <div class="fc-front">
+              <div class="fc-front-glow"></div>
+              <div class="fc-icon">🎓</div>
+              <div class="fc-front-label">Teenage</div>
+              <div class="fc-tap-hint">Tap to reveal</div>
+            </div>
+            <div class="fc-back fc-photo-back">
+              <div class="fc-photo-frame" style="border: none; cursor: default;">
+                <img src="images/teen.png" class="fc-photo-img" alt="Teenage photo" />
+              </div>
+              <p class="fc-photo-caption">Growing up ✨</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flashcard photo-flashcard reveal" onclick="this.classList.toggle('flipped')">
+          <div class="fc-inner">
+            <div class="fc-front">
+              <div class="fc-front-glow"></div>
+              <div class="fc-icon">👑</div>
+              <div class="fc-front-label">Current</div>
+              <div class="fc-tap-hint">Tap to reveal</div>
+            </div>
+            <div class="fc-back fc-photo-back">
+              <div class="fc-photo-frame" style="border: none; cursor: default;">
+                <img src="images/current.png" class="fc-photo-img" alt="Current photo" />
+              </div>
+              <p class="fc-photo-caption">Beautiful as always 💖</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BIG MESSAGE CARD -->
+      <div class="big-message-card reveal">
+        <div class="bmc-glow"></div>
+        <div class="bmc-header">
+          <span class="bmc-seal">💙</span>
+          <span class="bmc-date">May 16, 2026</span>
+        </div>
+        <div class="bmc-body">
+          <p class="bmc-greeting">Hey Minal! 🎉</p>
+          <p>On this very special day, the universe is celebrating the fact that you were born. 🌟</p>
+          <p>You bring so much light, warmth, and joy to everyone around you — and that makes you absolutely one of a
+            kind. 💙</p>
+          <p>May this birthday bring you everything you deserve — laughter, love, happiness and all your dreams coming
+            true. 🌙✨</p>
+          <p>You are truly special, and I'm so glad you exist in this world. 🌸</p>
+          <p class="bmc-sign">With love &amp; warm wishes 💛</p>
+        </div>
+        <div class="bmc-wax">💙</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-content">
+      <div class="footer-hearts">💙</div>
+      <h3 class="footer-title">Happy 18th Birthday!</h3>
+      <p style="color:var(--grey); margin-bottom: 8px;">Made with love, for you. Always.</p>
+      <button class="btn-gold" onclick="launchBalloons()">🎈 More Balloons!</button>
+    </div>
+  </footer>
+
+  <div id="music-btn" title="Toggle Music" onclick="toggleMusic()">
+    <span id="music-icon">🎵</span>
+  </div>
+
+  <!-- POP BURST OVERLAY -->
+  <div id="pop-burst-overlay" class="hidden">
+    <canvas id="burst-canvas"></canvas>
+    <div id="burst-year-label"></div>
+  </div>
+
+  <!-- 18 CELEBRATION OVERLAY -->
+  <div id="mega-celebration-overlay" class="hidden">
+    <canvas id="mega-canvas"></canvas>
+    <div class="mega-text">
+      <h2>🎊 17 YEARS OF YOU! 🎊</h2>
+      <p>Every single one has been a blessing.</p>
+      <button class="btn-gold" onclick="showCakeStage()">🎂 Now Cut the Cake!</button>
+    </div>
+  </div>
+
+  <audio id="bg-music" loop>
+    <source src="music/Kanaa - Othaiyadi Pathayila Video  Arunraja Kamaraj  Dhibu Ninan Thomas - Lyrics.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
